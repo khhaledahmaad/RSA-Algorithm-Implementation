@@ -30,7 +30,7 @@ def calculate_ke(totient):
     # Calculate the best k, e
     for i in range(1,10):
         # Create a range of values for k 
-        k = 1 + i*totient
+        k = 1 + i*totient  # Evaluates to [k % totient == 1]
         for e in e_list:
             if k % e == 0:
                 return k, e
